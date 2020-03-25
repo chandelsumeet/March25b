@@ -1,0 +1,271 @@
+
+body input[type=checkbox]
+{
+display: none;
+}
+.tab1,.tab2,.tab3
+{
+	display: none;
+	padding: 33px;
+}
+#sec1-c1:checked ~ .tabs .main .tab1
+{
+	display: grid;
+
+}
+#sec1-c2:checked ~ .tabs .main .tab2
+{
+	display: grid;
+
+}
+#sec1-c3:checked ~ .tabs .main .tab3
+{
+	display: grid;
+
+}
+.color-blue
+{
+	color: #33d0e8;
+}
+.color-dark
+{
+	color: #696868;
+}
+.bg-white
+{
+	background-color: white;
+}
+.bg-gray
+{
+	background-color: #e6e6e6;
+}
+.gen
+{
+	
+	padding: 15px;
+}
+.f-w600
+{
+	font-weight: 600;
+}
+.grid1
+{
+	display: grid;
+	grid-template-rows: repeat(2,auto);
+	grid-row-gap: 10px;
+}
+.grid2
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 10px;
+}
+.grid3
+{
+	display: grid;
+	grid-auto-rows: auto;
+	grid-row-gap: 10px;
+}
+.area
+{
+	height: 30px;
+	border-radius: 4px;
+	border:1px solid #e3e3e3;
+}
+.btn
+{
+	padding: 13px 20px;
+	border-radius: 4px;
+
+	border:1px solid #a6a6a6;
+}
+.btn:hover
+{
+	background-color: #dbd9d9;
+}
+.div-btn
+{
+	justify-self:end;
+}
+.main
+{
+	display: grid;
+	grid-auto-rows: auto;
+	grid-row-gap: 10px;
+	border:3px solid #e6e6e6;
+	
+
+}
+.tabs
+{
+	
+	display: grid;
+	grid-template-rows: repeat(3,auto);
+	grid-row-gap: 20px;
+}
+.b-r4
+{
+	border-radius: 4px
+
+}
+.l1
+{
+
+	position: relative;
+	cursor: pointer;
+}
+#c1,#c2,#c3,#c4
+{
+	position: absolute;
+	opacity: 0;
+}
+.checkmark
+{
+	width: 1rem;
+	height: 1rem;
+	background-color: #FFF;
+	position: absolute;
+	border-radius: .25rem;
+	border: #adb5bd solid 1px;
+}
+.l1:hover #c1 ~ .checkmark
+{
+	background-color: #ccc;
+}
+.l1 #c1:checked ~ .checkmark
+{
+	background-color: #2196F3;
+}
+.l1 #c1:checked ~ .checkmark:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 1px;
+	width: 5px;
+	height: 8px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+.l1:hover #c2 ~ .checkmark
+{
+	background-color: #ccc;
+}
+.l1 #c2:checked ~ .checkmark
+{
+	background-color: #2196F3;
+}
+.l1 #c2:checked ~ .checkmark:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 1px;
+	width: 5px;
+	height: 8px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+
+
+.l1:hover #c3 ~ .checkmark
+{
+	background-color: #ccc;
+}
+.l1 #c3:checked ~ .checkmark
+{
+	background-color: #2196F3;
+}
+.l1 #c3:checked ~ .checkmark:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 1px;
+	width: 5px;
+	height: 8px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+
+
+.l1:hover #c4 ~ .checkmark
+{
+	background-color: #ccc;
+}
+.l1 #c4:checked ~ .checkmark
+{
+	background-color: #2196F3;
+}
+.l1 #c4:checked ~ .checkmark:after {
+	display: block;
+	content: "";
+	position: absolute;
+	left: 4px;
+	top: 1px;
+	width: 5px;
+	height: 8px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+
+
+.grid5
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 36px;
+	justify-content: left;
+}
+.imgs
+{
+	width: 30px;
+	height: 30px;
+}
+.grid-t1
+{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+.grid-t2
+{
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+}	
+
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: underline;
+}
+.bod
+{
+	border-bottom :1px solid #ededed; 
+	padding: 5px
+}
+.card
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+.f-s25
+{
+	font-size: 25px;
+}
+.tab3
+{
+	grid-template-rows: repeat(3,auto);
+	grid-row-gap: 20px;
+}
